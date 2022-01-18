@@ -46,43 +46,6 @@ echo "<form action='thirdRoll.php' method='post' style='text-align:center' />".
            '<input type="submit" name="submit" value="Roll Again!"/>
         </form>';
 
-        if(isset($_POST['firstDie'])){
-            //select info from first roll sql and insert second roll info into new table
-            //do this for each pair of die.
-        
-            $query = "SELECT first_die FROM first_roll ORDER BY id DESC LIMIT 1" ;  
-                $result = mysqli_query($conn, $query);  
-                while($row = mysqli_fetch_assoc($result))  
-                    {  
-                        $first_die = (int)$row['first_die'];
-                        echo "<br>You kept ".$first_die;
-                    }
-        
-        }
-        else {
-            //if first die was not selected.  Show a box that's going to have a random number in it.
-        
-            $first_die = rand(1,6);
-        }    
-
-            
- 
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
 echo "<table border='1' style='margin-top=-100px';>
         <tr><th>Upper Section</th><th>How to Score</th><th>Game #1</th></tr>
         <tr><td>Aces</td><td>Count and add only aces</td><td><!--PHP stuff--></td></tr>
