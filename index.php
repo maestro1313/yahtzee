@@ -47,22 +47,7 @@ if(isset($_POST["submit"])){
         </form>';
     
     //send values for second roll over and use isset and boolean operators to determine what die were kept by the user
-    //Plug that info into second_roll table and roll a third time.
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    //Plug that info into second_roll table and roll a third time.    
     
     echo "<table border='1';>
     <tr><th>Upper Section</th><th>How to Score</th><th>Game #1</th></tr>
